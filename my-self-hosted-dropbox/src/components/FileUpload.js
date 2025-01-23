@@ -68,7 +68,9 @@ const FileUpload = () => {
         setError(null);
 
         try {
-            const fileKey = selectedFile.name;
+            // Add a unique identifier for versioning (e.g., timestamp)
+            const timestamp = new Date().toISOString();
+            const fileKey = `${timestamp}_${selectedFile.name}`;
             const fileBuffer = await selectedFile.arrayBuffer();
 
             await uploadData({
@@ -111,18 +113,26 @@ const FileUpload = () => {
                 <h3>Uploaded Files:</h3>
                 {files.length > 0 ? (
                     <ul>
-                        {files.map((file) => (
-                            <li key={file.key}>
-                                <a 
-                                    href={fileUrls[file.key]} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                >
-                                    {file.key}
-                                </a>
-                            </li>
-                        ))}
+                        {files.map((file) => {
+                            const [timestamp, ...fileNameParts] = file.key.split('_');
+                            const fileName = fileNameParts.join('_'); // Rejoin file name parts
+                            const uploadTime = new Date(timestamp).toLocaleString(); // Format timestamp for display
+                    
+                            return (
+                                <li key={file.key}>
+                                    <a 
+                                        href={fileUrls[file.key]} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                    >
+                                        {fileName}
+                                    </a>
+                                    <span>(Uploaded at: {uploadTime})</span>
+                                </li>
+                            );
+                        })}
                     </ul>
+                
                 ) : (
                     <p>No files found in the bucket.</p>
                 )}
