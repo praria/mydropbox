@@ -1,0 +1,26 @@
+.App-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+}
+
+.sign-out-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-out-button:hover {
+  background-color: #d33;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
