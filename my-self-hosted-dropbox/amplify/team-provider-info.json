@@ -17,6 +17,13 @@
       },
       "storage": {
         "S3Dropbox": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {},
+        "amplifyhosting": {
+          "appId": "d3rm7zj17zm2iw",
+          "type": "manual"
+        }
       }
     }
   }

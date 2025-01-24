@@ -49,7 +49,7 @@
         "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
         "UserPoolName": "myselfhosteddropbox53f9692e_userpool_53f9692e"
       },
-      "lastPushTimeStamp": "2025-01-15T23:55:50.374Z",
+      "lastPushTimeStamp": "2025-01-24T02:26:34.265Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/auth/myselfhosteddropbox53f9692e-cloudformation-template.json",
         "logicalId": "authmyselfhosteddropbox53f9692e"
@@ -58,19 +58,52 @@
   },
   "storage": {
     "S3Dropbox": {
-      "service": "S3",
-      "providerPlugin": "awscloudformation",
       "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
       "output": {
         "BucketName": "dropboxs3bucketfe00b-dev",
         "Region": "us-east-1"
       },
-      "lastPushTimeStamp": "2025-01-15T23:55:50.868Z",
+      "lastPushTimeStamp": "2025-01-24T02:26:34.268Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
         "logicalId": "storageS3Dropbox"
+      }
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
       },
-      "lastPushDirHash": "wVPYxaQTGn5rT12xQDQLPVM0DEY="
+      "lastPushTimeStamp": "2025-01-24T02:26:34.270Z",
+      "output": {
+        "CloudFrontSecureURL": "https://ddny6gglpb84j.cloudfront.net",
+        "S3BucketSecureURL": "https://myelfostedropbox-20250123211046-hostingbucket-dev.s3.amazonaws.com",
+        "CloudFrontOriginAccessIdentity": "E16NIVBTEO4Q29",
+        "WebsiteURL": "http://myelfostedropbox-20250123211046-hostingbucket-dev.s3-website-us-east-1.amazonaws.com",
+        "CloudFrontDistributionID": "EREQ5FY6RXRZQ",
+        "Region": "us-east-1",
+        "HostingBucketName": "myelfostedropbox-20250123211046-hostingbucket-dev",
+        "CloudFrontDomainName": "ddny6gglpb84j.cloudfront.net"
+      },
+      "lastPushDirHash": "w/Vngn8yyGIHsQTovti2eqC4OII="
+    },
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2025-01-24T02:26:34.643Z",
+      "output": {},
+      "lastPushDirHash": "wxMoOSaR3LaQlsLUpVZtWBBEdMA="
     }
   }
 }

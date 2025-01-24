@@ -68,7 +68,7 @@ const FileUpload = () => {
         setError(null);
 
         try {
-            // Add a unique identifier for versioning (e.g., timestamp)
+            // Add a unique identifier for versioning (timestamp)
             const timestamp = new Date().toISOString();
             const fileKey = `${timestamp}_${selectedFile.name}`;
             const fileBuffer = await selectedFile.arrayBuffer();
