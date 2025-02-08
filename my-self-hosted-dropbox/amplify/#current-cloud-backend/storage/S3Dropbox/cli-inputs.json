@@ -2,13 +2,12 @@
   "resourceName": "S3Dropbox",
   "policyUUID": "dfbace89",
   "bucketName": "dropboxs3bucket",
-  "storageAccess": "authAndGuest",
-  "guestAccess": [
-    "READ"
-  ],
+  "storageAccess": "auth",
+  "guestAccess": [],
   "authAccess": [
-    "CREATE_AND_UPDATE"
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
   ],
-  "triggerFunction": "NONE",
   "groupAccess": {}
 }
