@@ -53,3 +53,21 @@ Follow these steps to install the project on your system
 
 ### The Core Team
 -- Prakash Shrestha --
+
+## Usage
+1. Run locally: Start the development server (opens the app in the browser at http://localhost: 3000)
+    - npm start
+2. File Upload:
+    - Log in or sign up to access the file upload interface
+    - Choose a file to upload, and the app will automatically append a timestamp to the filename for versioning 
+    - Uploaded files are listed along with their timestamps.
+3. Access the Deployed application (hosted app) using the Amplify-provided domain (URL):
+    - Acessing via Amplify hosting URL ( https://dev.d3rm7zj17zm2iw.amplifyapp.com)
+    - Accessing via S3AndCloudFront URL (https://ddny6gglpb84j.cloudfront.net)
+4. Custom Domain Configuration:
+    - You may add a custom domain in the AWS Amplify Console
+    - Update DNS settings with the domain provider to point to Amplify
+    
+
+### The Core Team
+-- Prakash Shrestha --
