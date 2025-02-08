@@ -1,0 +1,35 @@
+.container {
+    max-width: 42rem; /* Equivalent to max-w-2xl */
+    margin: 2.5rem auto; /* Equivalent to mt-10 and mx-auto */
+    padding: 1.5rem; /* Equivalent to p-6 */
+    background-color: #412121;
+    border-radius: 1rem; /* Equivalent to rounded-2xl */
+    color: rgb(255, 255, 255); /* Equivalent to text-white */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
+  }
+  
+  .title {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    text-align: center; /* Equivalent to text-center */
+    margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+  }
+  
+  .loadingText {
+    text-align: center; /* Equivalent to text-center */
+    color: #9ca3af; /* Equivalent to text-gray-400 */
+  }
+  
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Equivalent to space-y-4 */
+  }
+  
+  .profileInfo p {
+    margin: 0;
+  }
+  
+  .profileInfo strong {
+    font-weight: 600; /* Equivalent to font-semibold */
+  }

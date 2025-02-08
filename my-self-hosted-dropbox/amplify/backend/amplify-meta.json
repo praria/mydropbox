@@ -49,11 +49,12 @@
         "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
         "UserPoolName": "myselfhosteddropbox53f9692e_userpool_53f9692e"
       },
-      "lastPushTimeStamp": "2025-01-24T02:46:01.553Z",
+      "lastPushTimeStamp": "2025-02-08T02:44:58.162Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/auth/myselfhosteddropbox53f9692e-cloudformation-template.json",
         "logicalId": "authmyselfhosteddropbox53f9692e"
-      }
+      },
+      "lastPushDirHash": "noAzcOO/WF8yui42PcJ3SMXVLoU="
     }
   },
   "storage": {
@@ -65,11 +66,12 @@
         "BucketName": "dropboxs3bucketfe00b-dev",
         "Region": "us-east-1"
       },
-      "lastPushTimeStamp": "2025-01-24T02:46:02.031Z",
+      "lastPushTimeStamp": "2025-02-08T02:44:58.517Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
         "logicalId": "storageS3Dropbox"
-      }
+      },
+      "lastPushDirHash": "rpRzpPUxqJ6QFbu8vsxXyVJUZR8="
     }
   },
   "hosting": {
@@ -80,7 +82,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/hosting/template.json",
         "logicalId": "hostingS3AndCloudFront"
       },
-      "lastPushTimeStamp": "2025-01-24T02:46:01.558Z",
+      "lastPushTimeStamp": "2025-02-08T02:44:58.165Z",
       "output": {
         "CloudFrontSecureURL": "https://ddny6gglpb84j.cloudfront.net",
         "S3BucketSecureURL": "https://myelfostedropbox-20250123211046-hostingbucket-dev.s3.amazonaws.com",
@@ -101,7 +103,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-myselfhosteddropbox-dev-fe00b-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "logicalId": "hostingamplifyhosting"
       },
-      "lastPushTimeStamp": "2025-01-24T02:46:01.560Z",
+      "lastPushTimeStamp": "2025-02-08T02:44:58.167Z",
       "output": {},
       "lastPushDirHash": "wxMoOSaR3LaQlsLUpVZtWBBEdMA="
     }

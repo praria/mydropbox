@@ -6,7 +6,9 @@
 }
 
 .sign-out-button {
-  margin-top: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #f44;
@@ -14,6 +16,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .sign-out-button:hover {
@@ -23,4 +26,30 @@
 h1 {
   font-size: 24px;
   margin: 10px 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: lightgray;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
 }

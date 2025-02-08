@@ -4,7 +4,7 @@
     border: 1px solid rgb(221, 221, 221);
     border-radius: 5px;
     max-width: 600px;
-    background-color: #412121; /* Subtle background for contrast */
+    background-color: #412121; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
